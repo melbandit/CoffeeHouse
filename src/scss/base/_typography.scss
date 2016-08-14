@@ -1,2 +1,38 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
 @import "helpers/variables";
+
+@font-face {
+    font-family: Lobster;
+    src: url(../fonts/Lobster/Lobster.ttf);
+}
+@font-face {
+    font-family: 'Holtwood One SC';
+    src: url(../fonts/Holtwood_One_SC/HoltwoodOneSC.ttf);
+}
+
+body, 
+html{
+	font-family: Helvetica, Arial, sans-serif;
+	color: $main-font-color;
+}
+
+h1{
+	font-family: Lobster;
+	font-size: 5em; //80px/16
+	color: white;
+	text-align: center;
+}
+h2{
+	font-family: 'Holtwood One SC';
+	font-size: 2.5em; //40px/16
+	color: white;
+	text-align: center;
+}
+
+.drink-name{
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 1.3125em;//21px/16
+}
+.drink-name__description{
+	font-size: 0.875em;//14px/16
+	color: $description-font-color;
+}
