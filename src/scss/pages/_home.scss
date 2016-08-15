@@ -7,9 +7,15 @@
 	display: table;
 	clear: both;
 }
+p{
+	margin: 0;
+}
 body{
 	background: url(../img/bg-dark.jpg);
 }
+
+// ><>><><><><><> .carousel <><><><><><>
+
 .carousel{
 	height: 360px;
 	//background-color: $carousel-bkg-color;
@@ -21,8 +27,46 @@ body{
 	}
 }
 
-	// @media (min-width: @screen-md-min) { 
-	// 	background: url(../img/coffee-1.jpg) no-repeat;
-	// }
+
+//<><><><><><><><><> .hero <><><><><><><><><><
+
+.hero{
+	margin: 40px auto;
+	max-width: 1170px;
+}
+#menu{
+	border-bottom: 2px solid rgba(255,255,255, 0.5);
+}
+h3{
+	border-bottom: 1px solid rgba(255,255,255, 0.5);
+	@include bp-sm {
+		border-bottom: 0px solid rgba(255,255,255, 0.5);
+	}
+}
+.special__item{
+	float: left;
+	width: 100%;
+	height: auto;
+	margin: 10px 0px;
+}
+.column{
+	@include bp-sm {
+		padding-left:10px;
+	}
+}
+
+//<><><><><><><><> footer <><><><><><><
+
+footer{
+	border-top: 1px solid #5e3c2f;
+	margin-bottom: 10px;
+	.logo{
+		margin: 0px 10px 40px 10px;
+		padding-top: 20px;
+	}
+	.address{
+		margin: 0px 10px;
+	}
+}
 
 
