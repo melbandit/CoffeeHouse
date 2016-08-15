@@ -7,3 +7,22 @@
 	display: table;
 	clear: both;
 }
+body{
+	background: url(../img/bg-dark.jpg);
+}
+.carousel{
+	height: 360px;
+	//background-color: $carousel-bkg-color;
+	background: $carousel-bkg-color url(../img/exterior.jpg) center no-repeat;
+	border-top: 1px solid #5e3c2f;
+	border-bottom: 1px solid #3c271e;
+	@include bp-md {
+		background: $carousel-bkg-color url(../img/coffee-1.jpg) center no-repeat;
+	}
+}
+
+	// @media (min-width: @screen-md-min) { 
+	// 	background: url(../img/coffee-1.jpg) no-repeat;
+	// }
+
+

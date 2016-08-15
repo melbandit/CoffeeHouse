@@ -10,50 +10,69 @@
     <!-- Bootstrap -->
     <link href="assets/css/main.css" rel="stylesheet">
 
-  </head>
-  <body>
+</head>
+    <body class="container-fluid">
 
-
-    <h3>Mixed: mobile, tablet, and desktop</h3>
-    <p></p>
-    <div class="row show-grid">
-        <div class="col-xs-12">
-            <header>
-                <h1>The Coffee House</h1>
-            </header>
+        <div class="row show-grid">
+            <div class="col-xs-12">
+                <header>
+                    <h1 class="text-center">The Coffee House</h1>
+                </header>
+            </div>
         </div>
-        <div class="col-xs-6 col-lg-4">.col-xs-6 .col-lg-4</div>
-    </div>
-    <div class="row show-grid">
-        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
-    </div>
 
-    <h3>Offset: mobile, tablet, and desktop</h3>
-    <div class="row show-grid">
-      <div class="col-md-4">.col-md-4</div>
-      <div class="col-md-4 col-md-offset-4">.col-md-4 .col-md-offset-4</div>
-    </div>
-    <div class="row show-grid">
-      <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-      <div class="col-md-3 col-md-offset-3">.col-md-3 .col-md-offset-3</div>
-    </div>
-    <div class="row show-grid">
-      <div class="col-md-6 col-md-offset-3">.col-md-6 .col-md-offset-3</div>
-    </div>
+        <div class="row show-grid">
+            <div class="carousel col-xs-12">
 
-    <h3>Column ordering</h3>
-    <div class="row show-grid">
-      <div class="col-md-9 col-md-push-3">.col-md-9 .col-md-push-3</div>
-      <div class="col-md-3 col-md-pull-9">.col-md-3 .col-md-pull-9</div>
-    </div>
+                <div class="row show-grid">
+                   <div class="col-xs-offset-6 visible-xs-block">
+                        <div class="location text-center">
+                            <strong class="hours">Open 24 Hours</strong>
+                            <strong class="address">Address Line 1 Cityname, ST 33333</strong>
+                            <button class="">Open in Maps</button>
+                        </div>
+                    </div>
+                </div>
 
+            </div>
+        </div>
+
+        <div class="row show-grid">
+
+            <div class="col-xs-12 visible-lg-block">
+                <h2 class="text-center">Today's Menu</h2>
+            </div>
+        </div>
+
+        <div class="row show-grid">
+            <div class="well well-lg clearfix"> <!-- delet later -->
     
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h3>- COFFEE -</h3>
+            </div>    
+            
+            <div class="col-xs-12 col-sm-6 col-md-4 col-md-push-4">
+               <h3 class="title--text-align">- TEA -</h3>
+               
+            </div>
+            
+            <div class="col-xs-6 col-md-4 col-md-pull-4">
+                2-images_A
+            </div>
+            <div class="col-xs-6 col-md-4 col-md-pull-4">
+                2-images_B
+            </div>
+            
+          </div>
+        </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
-  </body>
+        
+
+        
+
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    </body>
 </html>

@@ -1,4 +1,5 @@
 @import "helpers/variables";
+@import "helpers/mixins";
 
 @font-face {
     font-family: Lobster;
@@ -18,21 +19,31 @@ html{
 h1{
 	font-family: Lobster;
 	font-size: 5em; //80px/16
+	text-shadow: 1px 2px 0px rgba(255,255,255,0.5);
 	color: white;
-	text-align: center;
 }
 h2{
 	font-family: 'Holtwood One SC';
 	font-size: 2.5em; //40px/16
 	color: white;
-	text-align: center;
 }
+h3{
+	font-family: 'Holtwood One SC';
+	font-size: 1.875em; //30px/16
+	color: white;	
+}
+@include bp-md {
+	.title--text-align{
+		text-align: right;
+	}
+}
+
 
 .drink-name{
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 1.3125em;//21px/16
 }
-.drink-name__description{
+.drink-name__description{ //small
 	font-size: 0.875em;//14px/16
 	color: $description-font-color;
 }

@@ -1,41 +1,30 @@
 @import "helpers/variables";
 
-@mixin header--gradient{
-	background-image: -moz-linear-gradient( 90deg, $body-color 0%, #333 100%);
-	background-image: -webkit-linear-gradient( 90deg, $body-color 0%, #333 100%);
-	background-image: -ms-linear-gradient( 90deg, $body-color 0%, #333 100%);
-}
 
-@mixin nav--highlight{
-	padding: 16px 24px 21px 24px;
-	text-decoration: none;
-	border-top: 4px inset $primary-gold;
-	background-color: $body-color;
-	color: white;
-}
+// BREAKPOINT MIXINS=========================
 
-@mixin squares--font{
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	color: #555;
-	font-weight: bold;
-	opacity: 0.5;
+
+@mixin bp-sm {
+	@media only screen and(min-width: $breakpoint-sm){
+		@content;
+	}
 }
 
 
-@mixin footer--gradient{
-	background-image: -moz-linear-gradient( 90deg, #111 0%, #222 100%);
-	background-image: -webkit-linear-gradient( 90deg, #111 0%, #222 100%);
-	background-image: -ms-linear-gradient( 90deg, #111 0%, #222 100%);
+@mixin bp-md {
+	@media only screen and(min-width: $breakpoint-md){
+		@content;
+	}
 }
 
-@mixin container--width{
-	width: 1110px;
+@mixin bp-lg {
+	@media only screen and(min-width: $breakpoint-lg){
+		@content;
+	}
 }
 
-@mixin width-height--fullPercent{
-	width: 100%;
-	height: 100%;
-}
+
+// @mixin size($width, $height) {
+//   width: $width;
+//   height: $height;
+// }
