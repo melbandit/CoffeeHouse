@@ -12,23 +12,11 @@ p{
 }
 body{
 	background: url(../img/bg-dark.jpg);
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
-
-// ><>><><><><><> .carousel <><><><><><>
-
-.carousel{
-	height: 360px;
-	//background-color: $carousel-bkg-color;
-	background: $carousel-bkg-color url(../img/exterior.jpg) center no-repeat;
-	border-top: 1px solid #5e3c2f;
-	border-bottom: 1px solid #3c271e;
-	@include bp-md {
-		background: $carousel-bkg-color url(../img/coffee-1.jpg) center no-repeat;
-	}
-}
-
-
-//<><><><><><><><><> .hero <><><><><><><><><><
+//<><><><><><><><><> .hero <><><><><><><><><>
 
 .hero{
 	margin: 40px auto;
@@ -36,11 +24,23 @@ body{
 }
 #menu{
 	border-bottom: 2px solid rgba(255,255,255, 0.5);
+
+}
+.drink-name{
+	padding: 10px 0 15px 0;
+	@include bp-md {
+		padding: 0px 0 15px 0;
+	}
+}
+h2{
+	padding-bottom: 20px;
 }
 h3{
 	border-bottom: 1px solid rgba(255,255,255, 0.5);
-	@include bp-sm {
+	padding-bottom: 15px;
+	@include bp-md {
 		border-bottom: 0px solid rgba(255,255,255, 0.5);
+		padding-bottom: 0px;
 	}
 }
 .special__item{
@@ -54,6 +54,16 @@ h3{
 		padding-left:10px;
 	}
 }
+.location{
+	background-color: rgba(0,0,0,0.9);
+
+	// width: 275px;
+	// height: 70px;
+	button{
+		width: 275px;
+		height: 45px;
+	}
+}
 
 //<><><><><><><><> footer <><><><><><><
 
@@ -65,7 +75,10 @@ footer{
 		padding-top: 20px;
 	}
 	.address{
-		margin: 0px 10px;
+		padding-top: 30px;
+		.address__item{
+			margin: 0px 10px;
+		}
 	}
 }
 

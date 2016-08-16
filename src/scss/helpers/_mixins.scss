@@ -1,9 +1,6 @@
 @import "helpers/variables";
 
 
-// BREAKPOINT MIXINS=========================
-
-
 @mixin bp-sm {
 	@media only screen and(min-width: $breakpoint-sm){
 		@content;
@@ -22,9 +19,3 @@
 		@content;
 	}
 }
-
-
-// @mixin size($width, $height) {
-//   width: $width;
-//   height: $height;
-// }
