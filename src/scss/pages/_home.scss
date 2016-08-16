@@ -24,7 +24,6 @@ body{
 }
 #menu{
 	border-bottom: 2px solid rgba(255,255,255, 0.5);
-
 }
 .drink-name{
 	padding: 10px 0 15px 0;
@@ -32,11 +31,20 @@ body{
 		padding: 0px 0 15px 0;
 	}
 }
+.special{
+	@include bp-md {
+		margin-top: 20px;;
+	}
+}
+.special__item{
+ 	outline: solid rgba(255,255,255,0.5) 8px;
+    outline-offset: -8px;
+}
 h2{
 	padding-bottom: 20px;
 }
 h3{
-	border-bottom: 1px solid rgba(255,255,255, 0.5);
+	border-bottom: 1px dotted rgba(255,255,255, 0.5);
 	padding-bottom: 15px;
 	@include bp-md {
 		border-bottom: 0px solid rgba(255,255,255, 0.5);
@@ -55,31 +63,17 @@ h3{
 	}
 }
 .location{
+	margin-top:15px;
 	background-color: rgba(0,0,0,0.9);
-
-	// width: 275px;
-	// height: 70px;
+	.hours{
+		padding: 20px 0 15px 0;
+	}
+	.address{
+		line-height: 1.2em;
+	}
 	button{
+		margin-top: 10px;
 		width: 275px;
 		height: 45px;
 	}
 }
-
-//<><><><><><><><> footer <><><><><><><
-
-footer{
-	border-top: 1px solid #5e3c2f;
-	margin-bottom: 10px;
-	.logo{
-		margin: 0px 10px 40px 10px;
-		padding-top: 20px;
-	}
-	.address{
-		padding-top: 30px;
-		.address__item{
-			margin: 0px 10px;
-		}
-	}
-}
-
-

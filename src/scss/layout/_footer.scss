@@ -1,2 +1,19 @@
 @import "helpers/mixins";
 @import "helpers/variables";
+
+
+footer{
+	border-top: 1px solid $carousel-border-btm;
+	margin-bottom: 10px;
+	.logo{
+		margin: 0px 10px 40px 10px;
+		padding-top: 20px;
+	}
+	.address{
+		padding-top: 30px;
+		.address__item{
+			margin: 0px 10px;
+		}
+	}
+}
+
