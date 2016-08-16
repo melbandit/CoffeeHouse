@@ -27,14 +27,6 @@ body{
 }
 .drink-name{
 	padding: 10px 0 15px 0;
-	@include bp-md {
-		padding: 0px 0 15px 0;
-	}
-}
-.special{
-	@include bp-md {
-		margin-top: 20px;;
-	}
 }
 .special__item{
  	outline: solid rgba(255,255,255,0.5) 8px;
@@ -46,21 +38,12 @@ h2{
 h3{
 	border-bottom: 1px dotted rgba(255,255,255, 0.5);
 	padding-bottom: 15px;
-	@include bp-md {
-		border-bottom: 0px solid rgba(255,255,255, 0.5);
-		padding-bottom: 0px;
-	}
 }
 .special__item{
 	float: left;
 	width: 100%;
 	height: auto;
 	margin: 10px 0px;
-}
-.column{
-	@include bp-sm {
-		padding-left:10px;
-	}
 }
 .location{
 	margin-top:15px;

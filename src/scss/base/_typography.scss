@@ -32,11 +32,11 @@ h3{
 	font-size: 30px; //30px/16 1.875em
 	color: white;	
 }
-@include bp-md {
-	.text-align{
-		text-align: right;
-	}
-}
+// @include bp-md {
+// 	.text-align{
+// 		text-align: right;
+// 	}
+// }
 .location{
 	font-size: 20px;
 }
