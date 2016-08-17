@@ -7,19 +7,11 @@ $btn-default-bg: #FFFFFF;
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: $screen-sm-min) { 
-	.column{
-		padding-left:10px;
-	}
-	
 }
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: $screen-md-min) { 
 	.text-align{
 		text-align: right;
-	}
-	h3{
-		border-bottom: 0px solid rgba(255,255,255, 0.5);
-		padding-bottom: 0px;
 	}
 	.special{
 		margin-top: 20px;;
@@ -31,5 +23,4 @@ $btn-default-bg: #FFFFFF;
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: $screen-lg-min) { 
-	
 }
