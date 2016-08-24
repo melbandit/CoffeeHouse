@@ -12,14 +12,43 @@
 .store-item__title{
 	color: $carousel-border-top;
 }
-// h3.store-item__title{
-// 	margin: 0 40px;
-// }
+h2.store-item__title{
+	padding: 5px;
+	border-bottom: 3px solid $carousel-border-top;
+}
 p.store-item__price{
-	float: left;
+	font-size: 20px;
+	margin: 0 220px 0 20px;
+	color: $carousel-border-top;
+	@include bp-sm{
+		float: left;
+	}
+}
+.ratings{
 	font-size: 20px;
 	color: $carousel-border-top;
 }
-.ratings{
-	margin: 0 40px;
+.store-item__desc{
+	padding: 10px 20px 10px 0;
+}
+.links{
+	padding: 20px 0 0 20px;
+}
+img.store-item__img{
+	padding: 20px;
+	@include bp-sm{
+		width: 205px;
+	}
+	@include bp-md{
+		width: 267px;
+	}
+}
+.btn-group{
+	padding: 20px 0;
+}
+a{
+	color: $carousel-border-top;
+	&:hover{
+		color: $carousel-border-top;
+	}
 }
