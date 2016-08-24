@@ -1,8 +1,25 @@
-.hero{
+.bkg-page{
 	width: 90%;
 	height: auto;
+	min-height: 575px;
 	max-width: 970px;
 	background-color: $item-bkg;
 	border-radius: 25px;
-
+}
+.beans__item-container{
+	margin-top: 10px;
+}
+.store-item__title{
+	color: $carousel-border-top;
+}
+// h3.store-item__title{
+// 	margin: 0 40px;
+// }
+p.store-item__price{
+	float: left;
+	font-size: 20px;
+	color: $carousel-border-top;
+}
+.ratings{
+	margin: 0 40px;
 }
