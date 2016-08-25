@@ -19,6 +19,8 @@
   "dependencies": {
     "autoprefixer": "^6.4.0",
     "bootstrap-sass": "^3.3.7",
+    "breakpoint": "^0.1.6",
+    "breakpoint-sass": "^2.7.0",
     "browser-sync": "^2.14.0",
     "gulp": "^3.9.1",
     "gulp-clean-css": "^2.0.12",
@@ -26,6 +28,10 @@
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.2",
     "gulp-sourcemaps": "^1.6.0",
-    "gulp-util": "^3.0.7"
+    "gulp-util": "^3.0.7",
+    "susy": "^2.2.12"
+  },
+  "devDependencies": {
+    "susy": "^2.2.12"
   }
 }

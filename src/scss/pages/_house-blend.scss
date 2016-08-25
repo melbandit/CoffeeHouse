@@ -20,7 +20,7 @@ p.store-item__price{
 	font-size: 20px;
 	margin: 0 220px 0 20px;
 	color: $carousel-border-top;
-	@include bp-sm{
+	@include breakpoint(769px){
 		float: left;
 	}
 }
@@ -36,7 +36,7 @@ p.store-item__price{
 }
 img.store-item__img{
 	padding: 20px;
-	@include bp-sm{
+	@include breakpoint(769px){
 		width: 205px;
 	}
 	@include bp-md{
